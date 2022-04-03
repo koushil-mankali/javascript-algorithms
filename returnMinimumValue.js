@@ -7,10 +7,10 @@ console.log(Math.min(...arr));
 
 // sol 2  TimeComplexity => O(n)
 let min = (arr) => {
-    let minVal = arr[1]; // 1
+    let minVal = arr[0]; // 1
 
     for (let i = 0; i < arr.length; i++) { // 1
-        if (arr[i] < minVal) { // 1
+        if (arr[i] < minVal) { // n
             minVal = arr[i]; // n
         }
     }
